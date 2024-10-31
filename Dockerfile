@@ -12,6 +12,7 @@ RUN mkdir -p /app/dist
 COPY . .
 RUN npm run build
 
+
 # Step 2: Set up Nginx for serving the build files
 # 빌드된 정적 파일을 Nginx 서버로 제공하기 위해 Nginx 이미지를 사용합니다.
 FROM nginx:alpine
