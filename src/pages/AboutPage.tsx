@@ -3,6 +3,7 @@ import SampleMenu from "../components/menu/SampleMenu.tsx";
 function AboutPage() {
 
     console.log("=========================");
+
     console.log(import.meta.env.VITE_API_HOST)
 
     return (
