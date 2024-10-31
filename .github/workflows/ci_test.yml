@@ -15,11 +15,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-#      - name: Create .env file
-#        run: |
-#          echo "VITE_APP_API_HOST=${{ secrets.VITE_APP_API_HOST }}" > .env
-#          echo "VITE_APP_REDIRECT_URI=${{ secrets.VITE_APP_REDIRECT_URI }}" >> .env
-#          echo "VITE_API_HOST=${{ secrets.VITE_API_HOST}}" >> .env
+      - name: Create .env file
+        run: |
+          echo "VITE_APP_API_HOST=${{ secrets.VITE_APP_API_HOST }}" > .env
+          echo "VITE_APP_REDIRECT_URI=${{ secrets.VITE_APP_REDIRECT_URI }}" >> .env
+          echo "VITE_API_HOST=${{ secrets.VITE_API_HOST}}" >> .env
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
