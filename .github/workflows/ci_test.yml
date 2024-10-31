@@ -31,13 +31,6 @@ jobs:
       - name: Run build
         run: npm run build
 
-      - name: Build the Docker image
-        run: docker build -t jiho0815/r1_image:latest .
-
-      - name: Push the Docker image to Docker Hub
-        run: docker push jiho0815/r1_image:latest
-
-
       - name: Log in to Docker Hub
         run:
           echo "${{ secrets.ACCESS_TOKEN }}" | docker login -u "${{ secrets.ACCESS_USERNAME }}" --password-stdin
