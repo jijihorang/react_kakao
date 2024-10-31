@@ -31,7 +31,7 @@ jobs:
           echo "${{ secrets.ACCESS_TOKEN }}" | docker login -u "${{ secrets.ACCESS_USERNAME }}" --password-stdin
 
       - name: Build the Docker image
-        run: docker build -t zk2840174/r1_image:latest .
+        run: docker build -t jiho0815/rk_image:latest .
 
       - name: Push the Docker image to Docker Hub
-        run: docker push zk2840174/r1_image:latest
+        run: docker push jiho0815/rk_image:latest
